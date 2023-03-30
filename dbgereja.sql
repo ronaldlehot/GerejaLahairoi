@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2023 at 11:25 AM
+-- Generation Time: Mar 30, 2023 at 03:09 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 5.6.39
 
@@ -69,14 +69,7 @@ CREATE TABLE `tbl_file` (
 --
 
 INSERT INTO `tbl_file` (`kode`, `kategori`, `judul`, `konten`, `tgl_posting`, `user`, `status`, `data_file`) VALUES
-(1, 'MINGGU', '11 : 00 Jam Ibdah Telah di ubah', '<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"height:80px; width:383px\">\r\n	<tbody>\r\n		<tr>\r\n			<td>09:00-10.40 WIB</td>\r\n			<td>Ibadah Pertama</td>\r\n		</tr>\r\n		<tr>\r\n			<td>11.00-Selesai</td>\r\n			<td>Ibdah Ke II</td>\r\n		</tr>\r\n		<tr>\r\n			<td>&nbsp;</td>\r\n			<td>\r\n			<p>Kami Mengharapkan Kedatangan Anda Untuk Tuhan</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', '2018-09-16', 'Delisman', 'Aktif', ''),
-(3, 'SELASA', '19 : 00 - Latihan Pelayanan Music - Di Gereja', '', '2018-09-16', 'Admin', 'Akif', ''),
-(4, 'RABU', '19 : 00 - Doa Syafaat - Di Gereja', '', '2018-09-16', 'Admin', 'Akif', ''),
-(58, 'KAMIS', 'Ibadah Doa Rumah Tangga', '', '2018-09-16', 'Admin', 'Akif', ''),
-(59, 'JUMAT', '19 : 00 Latihan Pelayanan Musik - Di Gereja', '', '2018-09-16', 'Admin', 'Aktif', ''),
-(60, 'SABTU', '17 : 00 Menara Doa di Gereja dan 20: 00 : Ibadah Kaum Muda-Mudi di Gereja', '', '2018-09-17', 'Admin', '', ''),
-(61, 'anfanf', 'nanfioanf', '<p>nafnanfinq</p>\r\n', '1231-12-02', 'afanf', '', ''),
-(62, 'senin', 'kerja bakti', '<p>kerja yang rajin yahh</p>\r\n', '0000-00-00', 'Admin', '', '');
+(1, 'MINGGU', '11 : 00 Jam Ibdah Telah di ubah', '<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"height:80px; width:383px\">\r\n	<tbody>\r\n		<tr>\r\n			<td>09:00-10.40 WIB</td>\r\n			<td>Ibadah Pertama</td>\r\n		</tr>\r\n		<tr>\r\n			<td>11.00-Selesai</td>\r\n			<td>Ibdah Ke II</td>\r\n		</tr>\r\n		<tr>\r\n			<td>&nbsp;</td>\r\n			<td>\r\n			<p>Kami Mengharapkan Kedatangan Anda Untuk Tuhan</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', '2018-09-16', 'Delisman', 'Aktif', '');
 
 -- --------------------------------------------------------
 
@@ -233,6 +226,24 @@ INSERT INTO `tbl_video` (`kode`, `nama`, `alamat`) VALUES
 (4, 'Lagu-Lau Rohani 2', 'kvF5QsrR1Z0'),
 (5, 'Video Ke COBA', 'cq4SUrLJfN8');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_warta_jemaat`
+--
+
+CREATE TABLE `tbl_warta_jemaat` (
+  `id` int(11) NOT NULL,
+  `isi_warta` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_warta_jemaat`
+--
+
+INSERT INTO `tbl_warta_jemaat` (`id`, `isi_warta`) VALUES
+(2, '<p><em><strong>Informasi atau embaran[1] adalah pesan (ucapan atau ekspresi) atau kumpulan pesan yang terdiri dari order sekuens dari simbol, atau makna yang dapat ditafsirkan dari pesan atau kumpulan pesan. Informasi dapat direkam atau ditransmisikan. Hal ini dapat dicatat sebagai tanda-tanda, atau sebagai sinyal berdasarkan gelombang. Informasi adalah jenis acara yang mempengaruhi suatu negara dari sistem dinamis. Para konsep memiliki banyak arti lain dalam konteks yang berbeda.[2] Informasi bisa dikatakan sebagai pengetahuan yang didapatkan dari pembelajaran, pengalaman, atau instruksi.[3] Informasi telah digunakan untuk seluruh segi kehidupan manusia secara individual, kelompok maupun organisasi. Pada tingkat individu, informasi digunakan untuk pengetahuan tentang pendidikan, kesehatan, lapangan pekerjaan maupun jenis produk atau jasa.[4] Kegunaan informasi ditentukan oleh tujuan pengguna, ketelitian pengolahan data, ruang dan waktu serta bentuk dan keadaan semantik.[5] jndnadnasnjd</strong></em></p><p><em><strong>amdafamfa</strong></em></p>');
+
 --
 -- Indexes for dumped tables
 --
@@ -298,6 +309,12 @@ ALTER TABLE `tbl_video`
   ADD PRIMARY KEY (`kode`);
 
 --
+-- Indexes for table `tbl_warta_jemaat`
+--
+ALTER TABLE `tbl_warta_jemaat`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -360,6 +377,12 @@ ALTER TABLE `tbl_user`
 --
 ALTER TABLE `tbl_video`
   MODIFY `kode` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tbl_warta_jemaat`
+--
+ALTER TABLE `tbl_warta_jemaat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
