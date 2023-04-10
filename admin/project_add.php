@@ -18,25 +18,25 @@ include'header.php'; ?>
             <div class="col-lg-12">
               
                 <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">HARI</label>
+                      <label class="col-sm-2 form-control-label">KATEGORI</label>
                       <div class="col-sm-10">
                         <input type="text" name="txtkategori" class="form-control is-valid" placeholder="Kategori Berita">
                       </div>
                 </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">NAMA KEGIATAN</label>
+                      <label class="col-sm-2 form-control-label">JUDUL BERITA</label>
                       <div class="col-sm-10">
                         <input type="text" name="txtjudul" class="form-control is-valid" placeholder="JUDUL NEWS / ARTIKEL">
                       </div>
                 </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">DESKRIPSI KEGIATAN</label>
+                      <label class="col-sm-2 form-control-label">DESKRIPSI BERITA</label>
                       <div class="col-sm-10">
                         <textarea class="ckeditor" id="ckedtor" name="txtkonten"></textarea>
                       </div>
                   </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label"> TANGGAL KEGIATAN</label>
+                      <label class="col-sm-2 form-control-label"> TANGGAL BERITA</label>
                       <div class="col-sm-10">
                         <input type="date" name="txttanggal" class="form-control is-valid">
                       </div>

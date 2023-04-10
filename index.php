@@ -1,4 +1,5 @@
 <?php include'header.php';?>
+<?php include'koneksi.php';?>
 
 <head>
   
@@ -19,34 +20,28 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Selamat Datang di Website Resmi GMIT Lahairoi Tuak Sabu </span></h2>
               <p class="animate__animated animate__fadeInUp">"Yesus Kristus Adalah Tuhan"</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
+              <a href="tentang.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
             </div>
           </div>
         </div>
 
         <!-- Slide 2 -->
+        <?php
+            $qry = mysqli_query($konek,"SELECT * FROM tbl_file ");
+            while ($data=mysqli_fetch_assoc($qry)) {
+          ?>
         <div class="carousel-item" style="background-image: url(assets/img/slide/Lahairoi2.jpg)">
+       
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Motto Gereja</h2>
-              <p class="animate__animated animate__fadeInUp">"Roh Kudus memperbaharui segenap ciptaan"</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
+              <h2 class="animate__animated animate__fadeInDown">Pengumuman Gereja</h2>
+              <p class="animate__animated animate__fadeInUp"><?php echo $data['judul']; ?></p>
+              <a href="kegiatan_detail.php?id=<?php echo base64_encode($data['kategori']); ?>" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
             </div>
           </div>
+         
         </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/Lahairoi3.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Motto Gereja</h2>
-              <p class="animate__animated animate__fadeInUp">"Tegarkanlah selalu hatimu, hai orang-orang yang menaruh seluruh harapan kepada Tuhan"</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
+        <?php } ?>
 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -62,6 +57,10 @@
   <main id="main">
     <!-- ======= Sambutan Ketua Majelis Jemaat ======= -->
     <section id="Sambutan" class="Sambutan">
+    <?php
+            $qry = mysqli_query($konek,"SELECT * FROM tbl_sambutan ");
+            while ($data=mysqli_fetch_assoc($qry)) {
+          ?>
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Beranda</h2>
@@ -69,29 +68,26 @@
         </div>
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/kmj.jpeg" class="img-fluid" alt="">
+            <img src="assets/img/team/<?php echo $data['gambar']; ?>"class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>"Selamat memasuki minggu-minggu sengsara. Kiranya Tuhan Yesus Memberkati kita semua."</h3>
+            <h3><?php echo $data['konten']; ?></h3>
             <p class="fst-italic">
-              Pdt. Yorita P. A Kim - Tlonaen, S.Th
+            <?php echo $data['nama']; ?>
             <p>
             <p class="fst-italic">
-              Ketua Majelis Jemaat Lahairoi Tuak Sabu Lasiana
+            <?php echo $data['jabatan']; ?>
             <p>
           </div>
         </div>
       </div>
+      <?php } ?>
     </section><!-- End About Section -->
 </br>   
-<section id="contact" class="wow fadeInUp">
+<!-- Informasi Terbaru -->
+<!-- <section id="contact" class="wow fadeInUp">
 	<div class="services">
-		<!-- <div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title"><h2>Berita Terbaru</h2></div>
-				</div>
-			</div> -->
+		
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Beranda</h2>
@@ -100,7 +96,7 @@
         <div class="row">
 			<div class="row services_row">
 
-<!-- Informasi Terbaru -->
+
 				 <?php
             $qry = mysqli_query($konek,"SELECT * FROM tbl_file ");
             while ($data=mysqli_fetch_assoc($qry)) {
@@ -123,7 +119,7 @@
 		</div>
 	</div>
 </section>
- 
+  -->
     <!-- ======= Pelayanan Section ======= -->
     <section id="pelayanan" class="pelayanan">
       <div class="container" data-aos="fade-up">

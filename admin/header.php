@@ -65,10 +65,6 @@
 
                 <li><a href="ibadahrt_add.php">Tambah Ibadah Rumah Tangga</a></li>
                 <li><a href="ibadahrt_tampil.php">Daftar Ibadah Rumah Tangga</a></li>
-                
-                <li><a  href="isi_warta.php">Isi Warta</a></li>
-                <li><a  href="isi_sejarah.php">Isi Sejarah</a></li>
-                <li><a  href="isi_visi_misi.php">Isi Visi Misi</a></li>
 
                 <li><a href="pendeta_add.php">Tambah Pendeta</a></li>
                 <li><a href="pendeta_tampil.php">Daftar Pendeta</a></li>
@@ -81,6 +77,14 @@
 
                 <li><a href="project_add.php">Tambah Berita</a></li>
                 <li><a href="project_tampil.php">Daftar Berita</a></li>
+
+                <!-- <li><a href="sambutan_add.php">Tambah sambutan</a></li> -->
+                <li><a href="sambutan_tampil.php">Isi Sambutan</a></li>
+
+                
+                <li><a  href="isi_warta.php">Isi Warta</a></li>
+                <li><a  href="isi_sejarah.php">Isi Sejarah</a></li>
+                <li><a  href="isi_visi_misi.php">Isi Visi Misi</a></li>
 
                 
 
