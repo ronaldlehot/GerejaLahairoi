@@ -88,7 +88,7 @@
 							<div class="news_image">
 								<img src="assets/img/blog/<?php echo $data['gambar']; ?>" alt="">
 								<div class="news_date d-flex flex-column align-items-center justify-content-center">
-										<div class="news_day">News</div>
+										<div class="news_day">BPA</div>
 										<div class="news_month"><?php echo $data['tgl_posting']; ?></div>
 								</div>
 							</div>
@@ -125,7 +125,7 @@
 						<!-- Categories -->
 						<div class="sidebar_categories sidebar_section">
 							<div class="sidebar_section_title">
-								<div class="sidebar_title">LIST</div>
+								<div class="sidebar_title">Daftar Renungan</div>
 							</div>
 							<ul>
 								<?php

@@ -52,7 +52,7 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
-    background-color: #4CAF50;
+    background-color: #d9232d;
     color: white;
 }
 
@@ -83,24 +83,21 @@ pagination li.active {
 
 </style>
 </head>
-
 	<div class="card-body">
-			<h3> PESAN MASUK</h3>
+			<h3> Pesan Masuk </h3>
                   <div class="table-responsive">
-
                     <table class="table">
-
-
 					<tr>
-						<th>NO</th>
-						<th>NAMA</th>
-						<th>HANDHPONE</th>
-						<th>EMAIL</th>
-						<th>PESAN</th>
-						<th>TANGGAL</th>
-						<th>ACTION</th>
+						<th>No</th>
+						<th>Nama</th>
+						<th>No Handphone</th>
+						<th>Email</th>
+						<th>Pesan</th>
+						<th>Tanggal</th>
+						<th>Aksi</th>
 					</tr>
 					<?php
+					// Include / load file koneksi.php
 					// Include / load file koneksi.php
 					include "../koneksi.php";
 					
@@ -116,10 +113,10 @@ pagination li.active {
 							<td> <?php echo $no; ?></td>
 							<td> <?php echo $data['nama']; ?></td>
 							<td> <?php echo $data['hp']; ?></td>
-							<td> <?php echo $data['email']; ?></td>s
+							<td> <?php echo $data['email']; ?></td>
 							<td> <?php echo $data['pesan']; ?></td>
 							<td> <?php echo $data['tanggal']; ?> </td>
-						<td> <a href="edit_pesan.php?id=<?php echo base64_encode($data['kode']); ?>">READ</a></td>
+						<td> <a href="edit_pesan.php?id=<?php echo base64_encode($data['kode']); ?>">Baca</a></td>
 						</tr>
 					<?php
 						$no++; // Tambah 1 setiap kali looping
@@ -140,13 +137,13 @@ pagination li.active {
 				<?php
 				if($page == 1){ // Jika page adalah page ke 1, maka disable link PREV
 				?>
-					<li class="disabled"><a href="#">SESUDAH</a></li>
+					<li class="disabled"><a href="#">Halaman Pertama</a></li>
 					<li class="disabled"><a href="#">&laquo;</a></li>
 				<?php
 				}else{ // Jika page bukan page ke 1
 					$link_prev = ($page > 1)? $page - 1 : 1;
 				?>
-					<li><a href="tampil_pesan.php?page=1">SESUDAH</a></li>
+					<li><a href="tampil_pesan.php?page=1">Halaman Pertama</a></li>
 					<li><a href="tampil_pesan.php?page=<?php echo $link_prev; ?>">&laquo;</a></li>
 				<?php
 				}
@@ -160,7 +157,7 @@ pagination li.active {
 
 				<?php
 				// Buat query untuk menghitung semua jumlah data
-				$sql2 = mysqli_query($konek, "SELECT COUNT(*) AS jumlah FROM tbl_file");
+				$sql2 = mysqli_query($konek, "SELECT COUNT(*) AS jumlah FROM tbl_pesan");
 				$get_jumlah = mysqli_fetch_array($sql2);
 				
 				$jumlah_page = ceil($get_jumlah['jumlah'] / $limit); // Hitung jumlah halamannya
@@ -183,13 +180,13 @@ pagination li.active {
 				if($page == $jumlah_page){ // Jika page terakhir
 				?>
 					<li class="disabled"><a href="#">&raquo;</a></li>
-					<li class="disabled"><a href="#">SELANJUTNYA</a></li>
+					<li class="disabled"><a href="#">Halaman Terakhir</a></li>
 				<?php
 				}else{ // Jika Bukan page terakhir
 					$link_next = ($page < $jumlah_page)? $page + 1 : $jumlah_page;
 				?>
 					<li><a href="tampil_pesan.php?page=<?php echo $link_next; ?>">&raquo;</a></li>
-					<li><a href="tampil_pesan.php?page=<?php echo $jumlah_page; ?>">SELANJUTNYA</a></li>
+					<li><a href="tampil_pesan.php?page=<?php echo $jumlah_page; ?>">Halaman Terakhir</a></li>
 				<?php
 				}
 				?>

@@ -7,9 +7,6 @@
 </head>
 
 <body>
-
-
-
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -84,47 +81,49 @@
             <p>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
-
-    <section id="contact" class="wow fadeInUp">
+</br>   
+<section id="contact" class="wow fadeInUp">
 	<div class="services">
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="section_title"><h2>BERITA</h2></div>
+					<div class="section_title"><h2>Berita Terbaru</h2></div>
 				</div>
-			</div>
+			</div> -->
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Beranda</h2>
+          <p>Informasi Terbaru</p>
+        </div>
+        <div class="row">
 			<div class="row services_row">
 
-				<!-- Service -->
+<!-- Informasi Terbaru -->
 				 <?php
             $qry = mysqli_query($konek,"SELECT * FROM tbl_file ");
             while ($data=mysqli_fetch_assoc($qry)) {
           ?>
-
 				<div class="col-lg-4 col-md-6 service_col">
-					
 						<div class="service text-center trans_200">
-							<div class="service_icon"><img class="svg" src="images/alarm-clock.svg" alt=""></div>
+							<div class="service_icon"><img class="png" src="assets/img/news.png" alt=""></div>
 							<div class="service_title trans_200"><?php echo $data['kategori']; ?></div>
 							<div class="service_text">
 								<div class="service_title trans_200"><?php echo $data['judul']; ?></div>
 
 							</div>
-							<div class="button dept_button"><a href="kegiatan_detail.php?id=<?php echo base64_encode($data['kategori']); ?>">READ MORE</a></div>
+							<div class="button dept_button"><a href="kegiatan_detail.php?id=<?php echo base64_encode($data['kategori']); ?>">Selengkapnya</a></div>
 						</div>
 
 					
 				</div>
 			<?php } ?>
-
 			</div>
 		</div>
 	</div>
 </section>
-
+ 
     <!-- ======= Pelayanan Section ======= -->
     <section id="pelayanan" class="pelayanan">
       <div class="container" data-aos="fade-up">
@@ -138,48 +137,48 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-children"></i></div>
-              <h4><a href="">Ibadah PAR</a></h4>
-              <p>Ibadah yang dikhususkan untuk usia anak-anak dan remaja. Dilaksanakan setiap hari minggu pukul 8 pagi.</p>
+              <h4><a href="jadwal-pelayanan.php">Ibadah PAR</a></h4>
+              <p>Ibadah yang dikhususkan untuk anak-anak. Dilaksanakan setiap hari Minggu jam 10 pagi di masing-masing wilayah.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class='bx bxs-building-house' ></i></i></div>
-              <h4><a href="">Ibadah Rumah Tangga</a></h4>
-              <p>Ibadah yang dilaksanakan pada setiap rumah tangga dari masing-masing rayon. Dilaksanakan setiap hari Rabu pukul 5 sore.</p>
+              <h4><a href="jadwal-pelayanan.php">Ibadah Rumah Tangga</a></h4>
+              <p>Ibadah yang dilaksanakan pada setiap rumah tangga di masing-masing wilayah. Dilaksanakan setiap hari Rabu pukul 5 sore.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="fa-sharp fa-solid fa-person-dress"></i></div>
-              <h4><a href="">Ibadah Perempuan GMIT</a></h4>
-              <p>Ibadah yang dikhususkan untuk perempuan. Dilakasanakan setiap hari selasa pukul 5 sore.</p>
+              <h4><a href="jadwal-pelayanan.php">Ibadah Perempuan GMIT</a></h4>
+              <p>Ibadah yang dikhususkan untuk para perempuan. Dilakasanakan setiap hari Kamis jam 5 sore di masing-masing lingkungan.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="fa-sharp fa-solid fa-person"></i></div>
-              <h4><a href="">Ibadah Kaum Bapak</a></h4>
-              <p>Ibadah yang dikhususkan untuk bapak-bapak. Dilaksanakan setiap hari jumat pukul 5 sore.</p>
+              <h4><a href="jadwal-pelayanan.php">Ibadah Kaum Bapak</a></h4>
+              <p>Ibadah yang dikhususkan untuk bapak-bapak. Dilaksanakan setiap hari Jumat jam 5 sore di masing-masing lingkungan.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class='bx bxs-group'></i></div>
-              <h4><a href="">Ibadah Pemuda</a></h4>
-              <p>Ibadah yang dikhususkan bagi para pemuda dan pemudi Gereja. Dilaksanakan setia hari kamis pukul 5 sore.</p>
+              <h4><a href="jadwal-pelayanan.php">Ibadah Pemuda</a></h4>
+              <p>Ibadah yang dikhususkan bagi para pemuda dan pemudi Gereja. Dilaksanakan setia hari Selasa jam 5 sore di masing-masing lingkungan.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="fa-sharp fa-solid fa-person-cane"></i></div>
-              <h4><a href="">Ibadah Lansia</a></h4>
-              <p>Ibadah yang dikhususkan untuk para lansia. Dilaksanakan setiap hari senin pukul 5 sore.</p>
+              <div class="icon"><i class="fa-solid fa-children"></i></div>
+              <h4><a href="">Ibadah Remaja/Pra Katekasasi</a></h4>
+              <p>Ibadah yang dikhususkan untuk para remaja yang disiapkan untuk menjadi anggota sidi. Dilaksanakan setiap hari Minggu jam 9.30 pagi di Gereja secara gabungan.</p>
             </div>
           </div>
 
@@ -187,8 +186,6 @@
 
       </div>
     </section><!-- End Pelayanan Section -->
-
-
 
     <!-- ======= Statistik Section ======= -->
     <section id="Statistik" class="Statistik">
@@ -245,13 +242,8 @@
       </div>
     </section>
     
-
-    
-
   </main><!-- End #main -->
 
-
-  
 
   <!-- ======= Footer ======= -->
     <?php include 'footer.php';

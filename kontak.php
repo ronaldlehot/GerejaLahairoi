@@ -77,14 +77,14 @@
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="txthandphone" id="subject" placeholder="HandPhone" required oninvalid="this.setCustomValidity('Hanphone Masih Kosong')" oninput="setCustomValidity('')"> </input>
+              <input type="text" class="form-control" name="txthandphone" id="subject" placeholder="No HP" required oninvalid="this.setCustomValidity('No HP Masih Kosong')" oninput="setCustomValidity('')"> </input>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="txtpesan" rows="5" data-rule="required" data-msg="Pesan Tidak Boleh Kosong" placeholder="Message"></textarea>
+              <textarea class="form-control" name="txtpesan" rows="5" data-rule="required" data-msg="Pesan Tidak Boleh Kosong" placeholder="Pesan"></textarea>
               <!-- <div class="validation"></div> -->
             </div>
             
-         <input type="submit" name="btnsimpan" class="btn btn-primary" value="Kirim Pesan">
+         <input type="submit" name="btnsimpan" class="btn btn-danger" value="Kirim Pesan">
           </form>
           <?php
           include "koneksi.php";

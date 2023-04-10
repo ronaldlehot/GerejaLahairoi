@@ -30,7 +30,7 @@ $data  = mysqli_fetch_array($sqlku);
 
              
 
-                <input type="submit" name="btnedit" class="btn btn-primary" value="TELAH DI BACA">
+                <input type="submit" name="btnedit" class="btn btn-primary" value="Telah Dibaca">
                 </div>
               </div>
           </div>

@@ -524,7 +524,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -2236,4 +2236,137 @@ tr:hover {
 
 #footer .credits a:hover {
   color: white;
+}
+/*********************************
+9. Services
+*********************************/
+
+.services
+{
+	width: 100%;
+	background: white;
+	padding-top: 95px;
+	padding-bottom: 65px;
+}
+.services_row
+{
+	margin-top: 20px;
+}
+.service_col
+{
+	margin-bottom: 30px;
+}
+.service
+{
+	width: 100%;
+	background: #f5f7fa;
+	padding-top: 46px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 57px;
+}
+.service:hover
+{
+	background: #283290;
+}
+.service::after
+{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.service:hover::after
+{
+	visibility: visible;
+	opacity: 1;
+}
+.service_icon
+{
+	width: 61px;
+	height: 61px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.service_icon svg
+{
+	width: 61px;
+	height: 61px;
+}
+.service_icon img
+{
+	max-width: 100%;
+}
+.svg path,
+.svg rect,
+.svg polygon
+{
+	fill: #d9232d;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.service:hover .svg path,
+.service:hover .svg rect,
+.service:hover .svg polygon
+{
+	fill: #FFFFFF;
+}
+.service_text
+{
+	margin-top: 16px;
+}
+.service_text p
+{
+	color: #696969;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.service_title
+{
+	font-size: 20px;
+	font-weight: 700;
+	color: #232323;
+	padding-top: 41px;
+	margin-top: 26px;
+}
+.service_title::before
+{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 54px;
+	height: 3px;
+	background: #d9232d;
+	content: '';
+}
+.service:hover .service_title
+{
+	color: #FFFFFF;
+}
+.service:hover .service_text p
+{
+	color: rgba(255,255,255,0.65);
 }

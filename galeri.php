@@ -1,4 +1,11 @@
 <?php include'header.php';?>
+
+<style>
+  .features_item_image{
+    margin-bottom: 15px;
+  }
+  </style>
+
 <head>
   
 
@@ -19,6 +26,8 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
+</br>
+</br>
     <div class="features">
 		<div class="container">
 			<div class="row">
@@ -54,6 +63,8 @@
 
   </main><!-- End #main -->
 
+</br>
+</br>
 
   <!-- ======= Footer ======= -->
   <?php include'footer.php';?>

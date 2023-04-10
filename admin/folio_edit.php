@@ -22,26 +22,26 @@ $data  = mysqli_fetch_array($sqlku);
             <div class="col-lg-12">
               
                 <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">Nama *</label>
+                      <label class="col-sm-2 form-control-label">Nama</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtnama" value="<?php echo $data['nama'] ?>" class="form-control is-valid" placeholder="Kategori Berita">
+                        <input type="text" name="txtnama" value="<?php echo $data['nama'] ?>" class="form-control is-valid" placeholder="Nama Gambar">
                       </div>
                 </div>
                  <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">Alamat *</label>
+                      <label class="col-sm-2 form-control-label">Alamat</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtalamat" value="<?php echo $data['alamat'] ?>" class="form-control is-valid" placeholder="Kategori Berita">
+                        <input type="text" name="txtalamat" value="<?php echo $data['alamat'] ?>" class="form-control is-valid" placeholder="Alamat Gambar">
                       </div>
                 </div>
 
                 <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">Gambar *</label>
+                      <label class="col-sm-2 form-control-label">Gambar</label>
                       <div class="col-sm-10">
-                        <input type="file" name="txtgambar" class="form-control is-valid" value="<?php echo $data['gambar'] ?>" placeholder="Status Berita">
+                        <input type="file" name="txtgambar" class="form-control is-valid" value="<?php echo $data['gambar'] ?>" placeholder="Gambar">
                       </div>
                   </div>
 
-                <input type="submit" name="btnedit" class="btn btn-primary" value="UPDATE">
+                <input type="submit" name="btnedit" class="btn btn-primary" value="Update">
                 </div>
               </div>
           </div>

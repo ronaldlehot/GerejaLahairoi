@@ -11,7 +11,7 @@ include'header.php';
       </section>
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="master.php">Home</a></li>
-            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active"> Posting Ibadah Pemuda</li> </li>
+            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active">Posting Ibadah Pemuda</li> </li>
           </ul>
 
        <section class="statistics">
@@ -26,7 +26,7 @@ include'header.php';
                       </div>
                 </div>
                 <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">TANGGAL POSTING</label>
+                      <label class="col-sm-2 form-control-label">Tanggal</label>
                       <div class="col-sm-10">
                         <input type="date" name="txttanggal" class="form-control is-valid">
                       </div>
@@ -49,17 +49,12 @@ include'header.php';
                 <div class="form-group row has-success">
                       <label class="col-sm-2 form-control-label">Keterangan</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtketerangan" class="form-control is-valid" placeholder="Keterangan Ibadah">
+                        <input type="text" name="txtketerangan" class="form-control is-valid" placeholder="Keterangan">
                       </div>
                 </div>
                   
-                  
-                 
-                  
-                 
-                 
 
-                <input type="submit" name="btnsimpan" class="btn btn-primary" value="POSTING Ibadah Pemudah">
+                <input type="submit" name="btnsimpan" class="btn btn-primary" value="Posting Ibadah Pemuda">
                 </div>
               </div>
           </div>

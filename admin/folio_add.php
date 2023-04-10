@@ -18,7 +18,7 @@ include'header.php'; ?>
             <div class="col-lg-12">
               
                 <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">Nama *</label>
+                      <label class="col-sm-2 form-control-label">Nama</label>
                       <div class="col-sm-10">
                         <input type="text" name="txtnama" class="form-control is-valid" placeholder="Nama Gambar">
                       </div>
@@ -26,17 +26,17 @@ include'header.php'; ?>
                   <div class="form-group row has-success">
                       <label class="col-sm-2 form-control-label">Link Gambar</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtalamat" class="form-control is-valid" value="-" placeholder="Alamat Link Gambar">
+                        <input type="text" name="txtalamat" class="form-control is-valid" value="-" placeholder="Link Gambar">
                       </div>
                 </div>
                 <div class="form-group row has-success">
                       <label class="col-sm-2 form-control-label">Gambar *</label>
                       <div class="col-sm-10">
-                        <input type="file" name="txtgambar" class="form-control is-valid" placeholder="Status Berita">
+                        <input type="file" name="txtgambar" class="form-control is-valid" placeholder="Gampar">
                       </div>
                   </div>
 
-                <input type="submit" name="btnsimpan" class="btn btn-primary" value="SIMPAN">
+                <input type="submit" name="btnsimpan" class="btn btn-primary" value="Simpan">
                 </div>
               </div>
           </div>
@@ -53,7 +53,7 @@ include'header.php'; ?>
                                 $simpan = mysqli_query($konek,"INSERT INTO tbl_folio (nama,alamat,gambar) VALUES ('$txtnama','$txtalamat','$nama_file')");
                                 if(!empty($lokasi_file)){
                           move_uploaded_file($lokasi_file, "../assets/img/portfolio/$nama_file");
-                          echo "Data Berhasil di simpan";
+                          // echo "Data Berhasil di simpan";
                             ?>
                             <script type="text/javascript">
                             alert('Data Anda Berhasil di Simpan');

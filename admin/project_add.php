@@ -9,7 +9,7 @@ include'header.php'; ?>
       </section>
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="master.php">Home</a></li>
-            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active"> Tambah Kegiatan</li> </li>
+            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active"> Tambah Berita</li> </li>
           </ul>
 
        <section class="statistics">
@@ -60,7 +60,7 @@ include'header.php'; ?>
                       </div>
                   </div> -->
 
-                <input type="submit" name="btnsimpan" class="btn btn-primary" value="SIMPAN KEGIATAN">
+                <input type="submit" name="btnsimpan" class="btn btn-primary" value="Posting Berita">
                 </div>
               </div>
           </div>

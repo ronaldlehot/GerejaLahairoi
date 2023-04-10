@@ -116,7 +116,7 @@ $data  = mysqli_fetch_array($sqlku);
 						<!-- Categories -->
 						<div class="sidebar_categories sidebar_section">
 							<div class="sidebar_section_title">
-								<div class="sidebar_title">LIST</div>
+								<div class="sidebar_title">Daftar Renungan</div>
 							</div>
 							<ul>
 								<?php

@@ -38,36 +38,54 @@
         <!-- Sidebar Header    -->
         <div class="sidenav-header d-flex align-items-center justify-content-center">
           <!-- User Info-->
-          <div class="sidenav-header-inner text-center"><img src="img/progremmer.png" alt="person" class="img-fluid rounded-circle">
+          <div class="sidenav-header-inner text-center"><img src="img/admin.png" alt="person" class="img-fluid rounded-circle">
             <h2 class="h5">Admin</h2><span>Lahairoi Tuak Sabu</span>
           </div>
           <!-- Small Brand information, appears on minimized sidebar-->
-          <div class="sidenav-header-logo"><a href="master.php" class="brand-small text-center"> <strong>G</strong><strong class="text-primary">K</strong></a></div>
+          <div class="sidenav-header-logo"><a href="master.php" class="brand-small text-center"> <strong>JLOT</strong><strong class="text-primary"></strong></a></div>
         </div>
         <!-- Sidebar Navigation Menus-->
         <div class="main-menu">
           <h5 class="sidenav-heading">Panel</h5>
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
-            <li><a href="master.php"> <i class="icon-home"></i>HOME                           </a></li>
+            <li><a href="master.php"> <i class="icon-home"></i>HOME</a></li>
             <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Master</a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                <li><a href="blog_add.php">Posting Renungan </a></li>
+                <li><a href="blog_add.php">Tambah Renungan </a></li>
                 <li><a href="blog_tampil.php">Daftar Renungan</a></li>
+                
                 <li><a href="ibadahpemuda_add.php">Tambah Ibadah Pemuda</a></li>
                 <li><a href="ibadahpemuda_tampil.php">Daftar Ibadah Pemuda</a></li>
-                <li><a href="kaumbapa_add.php">Tambah Ibadah Kaum Bapa</a></li>
-                <li><a  href="isi_warta.php">Isi Warta</a></li>
+                
+                <li><a href="kaumbapa_add.php">Tambah Ibadah Kaum Bapak</a></li>
+                <li><a href="kaumbapa_tampil.php">Daftar Ibadah Kaum Bapak</a></li>
+                
+                <li><a href="kaumwanita_add.php">Tambah Ibadah Perempuan GMIT</a></li>
+                <li><a href="kaumwanita_tampil.php">Daftar Ibadah Perempuan GMIT</a></li>
 
-                <li><a href="folio_add.php">Input Galeri</a></li>
+                <li><a href="ibadahrt_add.php">Tambah Ibadah Rumah Tangga</a></li>
+                <li><a href="ibadahrt_tampil.php">Daftar Ibadah Rumah Tangga</a></li>
+                
+                <li><a  href="isi_warta.php">Isi Warta</a></li>
+                <li><a  href="isi_sejarah.php">Isi Sejarah</a></li>
+                <li><a  href="isi_visi_misi.php">Isi Visi Misi</a></li>
+
+                <li><a href="pendeta_add.php">Tambah Pendeta</a></li>
+                <li><a href="pendeta_tampil.php">Daftar Pendeta</a></li>
+
+                <li><a href="pegawai_add.php">Tambah Pegawai</a></li>
+                <li><a href="pegawai_tampil.php">Daftar Pegawai</a></li>
+
+                <li><a href="folio_add.php">Tambah Galeri</a></li>
                 <li><a href="folio_tampil.php">Daftar Galeri</a></li>
 
-                <li><a href="project_add.php">Input Berita</a></li>
+                <li><a href="project_add.php">Tambah Berita</a></li>
                 <li><a href="project_tampil.php">Daftar Berita</a></li>
 
-                <li><a href="video_add.php">Input Video</a></li>
-                <li><a href="video_tampil.php">Daftar Video</a></li>
-
                 
+
+                <!-- <li><a href="video_add.php">Input Video</a></li>
+                <li><a href="video_tampil.php">Daftar Video</a></li> -->    
               </ul>
             </li>
             

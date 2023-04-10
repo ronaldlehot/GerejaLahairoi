@@ -1,5 +1,11 @@
 <?php include 'header.php'; ?>
+<?php 
 
+include 'koneksi.php';
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,156 +67,33 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Team Section ======= -->
+
     <section id="team" class="team ">
-      <div class="container">
+   
+   <div class="container">
 
-        <div class="row">
+     <div class="row">
+     <?php
+                    $qry = mysqli_query($konek,"SELECT * FROM tbl_pendeta ");
+                    while ($data=mysqli_fetch_assoc($qry)) {
+                   ?>
+       <div class="col-lg-6">
+         <div class="member d-flex align-items-start">
+           <div class="pic"><img  src="assets/img/team/<?php echo $data['gambar']; ?>"  class="img-fluid" alt=""></div>
+           <div class="member-info">
+             <h4><?php echo $data['nama']; ?></h4>
+             <p>Periode :</p>
+             <span><?php echo $data['periode']; ?></span>
+           </div>
+         </div>
+       </div>
 
-        <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. P. F. de Haan </h4>
-                <p>Periode :</p>
-                <p>Januari 1964 s/d Februari 1981</p>
-              </div>
-            </div>
-          </div>
+       <?php } ?>
+     </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. J. J. P. Therik S.MTh</h4>
-                <p>Periode :</p>
-                <p>Maret 1981 s/d Agustus 1981</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Ny. F. A. Fobia – Polhaupesy, S.m Th</h4>
-                <p>Periode :</p>
-                <p>Maret 1981 s/d Agustus 1981</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. J. H. Adoe S.MTh</h4>
-                <p>Periode :</p>
-                <p>September 1983 s/d November 1992</p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P5.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Yati Pandie – Malada	,S.Th</h4>
-                <p>Periode :</p>
-                <p>Januari 1994 s/d Mei 2004</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P6.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Magdalena B. Umpenawani,S.Th</h4>
-                <p>Periode :</p>
-                <p>Juli 2004 s/d  Februari 2010</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P7.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Marce Maniyeni – Nite</h4>
-                <p>Periode :</p>
-                <p>Februari 2010 s/d  Agustus 2014</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P8.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Alfred Waang Sir, S.Th</h4>
-                <p>Periode :</p>
-                <p>September 2014  s/d Sept. 2018</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P9.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Dafronz D.Z Waang Sir-Pello, S,Th</h4>
-                <p>Periode :</p>
-                <p>September 2014  s/d September 2018</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P10.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Dotie A.M.A Fanggidae - Kalelado, S.Th</h4>
-                <p>Periode :</p>
-                <p>September 2018  s/d September 2020</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P11.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Dorkas Ndolu- Aduhaning, S.Th</h4>
-                <p>Periode :</p>
-                <p>September 2018  s/d Agustus 2022</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P12.jpeg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Yorita P. A Kim – Tlonaen,S.Th</h4>
-                <p>Periode :</p>
-                <p>Oktober 2020 s/d Sekarang</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/P13.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Pdt. Lusia A. Nakmofa – Wulang,S.Th</h4>
-                <p>Periode :</p>
-                <p>Agustus 2022 s/d Sekarang</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section><!-- End Team Section -->
+   </div>
+  
+ </section><!-- End Team Section -->
 
   </main><!-- End #main -->
 

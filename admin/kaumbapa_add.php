@@ -1,6 +1,5 @@
 <?php 
 include'header.php'; 
-include'../koneksi.php'
 ;
 ?>
       <section class="statistics">
@@ -12,7 +11,7 @@ include'../koneksi.php'
       </section>
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="master.php">Home</a></li>
-            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active"> Posting Ibadah Kaum Bapa </li> </li>
+            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active"> Posting Ibadah Kaum Bapak</li> </li>
           </ul>
 
        <section class="statistics">
@@ -27,7 +26,7 @@ include'../koneksi.php'
                       </div>
                 </div>
                 <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">Tanggal Posting</label>
+                      <label class="col-sm-2 form-control-label">Tanggal</label>
                       <div class="col-sm-10">
                         <input type="date" name="txttanggal" class="form-control is-valid">
                       </div>
@@ -39,7 +38,14 @@ include'../koneksi.php'
                         <input type="text" name="txttempat" class="form-control is-valid" placeholder="Tempat Ibadah">
                       </div>
                 </div>
-                  
+                
+                <div class="form-group row has-success">
+                      <label class="col-sm-2 form-control-label">Asal Lingkungan</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="txtasal_lingkungan" class="form-control is-valid" placeholder="Asal Lingkungan">
+                      </div>
+                </div>
+
                 <div class="form-group row has-success">
                       <label class="col-sm-2 form-control-label">Pemimpin</label>
                       <div class="col-sm-10">
@@ -47,20 +53,8 @@ include'../koneksi.php'
                       </div>
                 </div>
 
-                <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">Asal Lingkungan</label>
-                      <div class="col-sm-10">
-                        <input type="text" name="txtasal_lingkungan" class="form-control is-valid" placeholder=" Asal Lingkungan">
-                      </div>
-                </div>
-                  
-                  
-                 
-                  
-                 
-                 
 
-                <input type="submit" name="btnsimpan" class="btn btn-primary" value="POSTING Ibadah Kaum Bapa">
+                <input type="submit" name="btnsimpan" class="btn btn-primary" value="Posting Ibadah Kaum Bapak">
                 </div>
               </div>
           </div>
@@ -73,12 +67,15 @@ include'../koneksi.php'
                         <?php
                             
                                 if (isset($_POST["btnsimpan"])){
+                                  // $txtkategori = mysql_real_escape_string($_POST['txtkategori']);
+                                  // $txtkategori =$_POST['txtkategori'];
                                   $txtlingkungan=$_POST['txtlingkungan'];
                                   $txttanggal=$_POST['txttanggal'];
                                   $txttempat=$_POST['txttempat'];
-                                  $txtpemimpin=$_POST['txtpemimpin'];
                                   $txtasal_lingkungan=$_POST['txtasal_lingkungan'];
-                                $simpan = mysqli_query($konek,"INSERT INTO tbl_kaum_bapa (lingkungan,tanggal,tempat,pemimpin,asal_lingkungan) VALUES ('$txtlingkungan','$txttanggal','$txttempat','$txtpemimpin','$txtasal_lingkungan')");
+                                  $txtpemimpin=$_POST['txtpemimpin'];
+                                  
+                                $simpan = mysqli_query($konek,"INSERT INTO tbl_kaum_bapa (lingkungan,tanggal,tempat,asal_lingkungan,pemimpin) VALUES ('$txtlingkungan','$txttanggal','$txttempat','$txtasal_lingkungan','$txtpemimpin')");
                                 
                             ?>
                             <script type="text/javascript">

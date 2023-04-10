@@ -15,6 +15,93 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="img/logo.jpg">
+<!-- <style>
+Mengatur tampilan form login
+.login-page {
+  background-color: #f9f9f9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inner {
+  width: 100%;
+  max-width: 400px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.input-material {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: border-bottom-color 0.5s;
+}
+
+.input-material:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-material:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.input-material:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.input-material:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-material:focus + .label-material {
+  color: #2e86de;
+}
+
+.label-material {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #2e86de;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.5s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1e56a0;
+  outline: none;
+}
+</style> -->
   </head>
   <body>
     <div class="page login-page">

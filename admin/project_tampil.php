@@ -17,7 +17,7 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
-    background-color: #4CAF50;
+    background-color: #d9232d;
     color: white;
 }
 
@@ -51,19 +51,19 @@ pagination li.active {
 </head>
 
 	<div class="card-body">
-			<h3> DAFTAR KEGIATAN </h3>
+			<h3> Daftar Kegiatan</h3>
                   <div class="table-responsive">
 
                     <table class="table">
 
 
 					<tr>
-						<th>NO</th>
-						<th>DESKRIP KEGIATAN</th>
-						<th>TANGGAL</th>
-						<th>HARI</th>
-						<th>NAMA PENGGUNA</th>
-						<th colspan="2">ACTION</th>
+						<th>No</th>
+						<th>Deskripsi Kegiatan</th>
+						<th>Tanggal</th>
+						<th>Hari</th>
+						<th>Nama Pengguna</th>
+						<th colspan="2">Aksi</th>
 					</tr>
 					<?php
 					// Include / load file koneksi.php
@@ -89,7 +89,7 @@ pagination li.active {
 							<td> <?php echo $data['kategori']; ?></td>
 							<td> <?php echo $data['user']; ?></td>
 							
-							<td> <a href="project_edit.php?id=<?php echo base64_encode($data['kode']); ?>">Edit</a></td>
+							<td> <a href="project_edit.php?id=<?php echo base64_encode($data['kode']); ?>">Ubah</a></td>
 							<td> <a href="project_hapus.php?id=<?php echo $data['kode']; ?> ">Hapus</a></td>
 						</tr>
 					<?php
@@ -111,13 +111,13 @@ pagination li.active {
 				<?php
 				if($page == 1){ // Jika page adalah page ke 1, maka disable link PREV
 				?>
-					<li class="disabled"><a href="#">SESUDAH</a></li>
+					<li class="disabled"><a href="#">Halaman Pertama</a></li>
 					<li class="disabled"><a href="#">&laquo;</a></li>
 				<?php
 				}else{ // Jika page bukan page ke 1
 					$link_prev = ($page > 1)? $page - 1 : 1;
 				?>
-					<li><a href="project_tampil.php?page=1">SESUDAH</a></li>
+					<li><a href="project_tampil.php?page=1">Halaman Pertama</a></li>
 					<li><a href="project_tampil.php?page=<?php echo $link_prev; ?>">&laquo;</a></li>
 				<?php
 				}
@@ -154,13 +154,13 @@ pagination li.active {
 				if($page == $jumlah_page){ // Jika page terakhir
 				?>
 					<li class="disabled"><a href="#">&raquo;</a></li>
-					<li class="disabled"><a href="#">SELANJUTNYA</a></li>
+					<li class="disabled"><a href="#">SHalaman Terakhir</a></li>
 				<?php
 				}else{ // Jika Bukan page terakhir
 					$link_next = ($page < $jumlah_page)? $page + 1 : $jumlah_page;
 				?>
 					<li><a href="project_tampil.php?page=<?php echo $link_next; ?>">&raquo;</a></li>
-					<li><a href="project_tampil.php?page=<?php echo $jumlah_page; ?>">SELANJUTNYA</a></li>
+					<li><a href="project_tampil.php?page=<?php echo $jumlah_page; ?>">Halaman Terakhir</a></li>
 				<?php
 				}
 				?>

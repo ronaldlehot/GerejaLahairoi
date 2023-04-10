@@ -13,7 +13,7 @@ $data  = mysqli_fetch_array($sqlku);
       </section>
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="master.php">Home</a></li>
-            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active">Edit  News</li> </li>
+            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active">Edit Renungan</li> </li>
           </ul>
 
        <section class="statistics">
@@ -22,49 +22,49 @@ $data  = mysqli_fetch_array($sqlku);
             <div class="col-lg-12">
               
                 <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">KATEGORI</label>
+                      <label class="col-sm-2 form-control-label">Kategori</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtkategori" value="<?php echo $data['kategori'] ?>" class="form-control is-valid" placeholder="Kategori Berita">
+                        <input type="text" name="txtkategori" value="<?php echo $data['kategori'] ?>" class="form-control is-valid" placeholder="Kategori Renungan">
                       </div>
                 </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">JUDUL</label>
+                      <label class="col-sm-2 form-control-label">Judul</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtjudul" value="<?php echo $data['judul'] ?>" class="form-control is-valid" placeholder="JUDUL NEWS / ARTIKEL">
+                        <input type="text" name="txtjudul" value="<?php echo $data['judul'] ?>" class="form-control is-valid" placeholder="Judul Renungan">
                       </div>
                 </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">KONTEN</label>
+                    <label class="col-sm-2 form-control-label">Isi Renungan</label>
                       <div class="col-sm-10">
-                       <textarea class="form-control" id="alamat" placeholder="Konten" name="txtkonten" required><?php echo $data['konten'];?></textarea>
+                        <textarea class="form-control" id="alamat" placeholder="Konten" name="txtkonten" required><?php echo $data['konten'];?></textarea>
                       </div>
                   </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">TANGGAL POSTING</label>
+                      <label class="col-sm-2 form-control-label">Tanggal Posting</label>
                       <div class="col-sm-10">
                         <input type="date" name="txttanggal" value="<?php echo $data['tgl_posting'] ?>" class="form-control is-valid">
                       </div>
                   </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">USER</label>
+                      <label class="col-sm-2 form-control-label">User</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtuser" value="<?php echo $data['user'] ?>" class="form-control is-valid" placeholder="Nama Posting ">
+                        <input type="text" name="txtuser" value="<?php echo $data['user'] ?>" class="form-control is-valid" placeholder="Nama">
                       </div>
                   </div>
                   <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">STATUS</label>
+                      <label class="col-sm-2 form-control-label">Status</label>
                       <div class="col-sm-10">
-                        <input type="text" name="txtstatus" value="<?php echo $data['status'] ?>" class="form-control is-valid" placeholder="Status Berita">
+                        <input type="text" name="txtstatus" value="<?php echo $data['status'] ?>" class="form-control is-valid" placeholder="Status Renungan">
                       </div>
                   </div>
                     <div class="form-group row has-success">
-                      <label class="col-sm-2 form-control-label">GAMBAR</label>
+                      <label class="col-sm-2 form-control-label">Gambar</label>
                       <div class="col-sm-10">
-                        <input type="file" name="txtgambar" class="form-control is-valid" value="<?php echo $data['gambar'] ?>" placeholder="Status Berita">
+                        <input type="file" name="txtgambar" class="form-control is-valid" value="<?php echo $data['gambar'] ?>" placeholder="Gambar">
                       </div>
                   </div>
 
-                <input type="submit" name="btnedit" class="btn btn-primary" value="UPDATE BLOG">
+                <input type="submit" name="btnedit" class="btn btn-primary" value="Update Renungan">
                 </div>
               </div>
           </div>

@@ -61,10 +61,10 @@ $visi_misi = mysqli_fetch_assoc($query);
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Profil Gereja</h2>
+          <h2>Warta Jemaat</h2>
           <ol>
-            <li><a href="warta-jemaat.php">Warta_Jemaat</a></li>
-            <li>Profil Gereja</li>
+            <li><a href="index.php">Beranda</a></li>
+            <li>Warta Jemaat</li>
           </ol>
         </div>
 
@@ -74,11 +74,6 @@ $visi_misi = mysqli_fetch_assoc($query);
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-        <div class="section-title">
-          <h2>Warta Jemaat</h2>
-          
-        </div>
-
         <div class="row content">
           <div>
             <p>

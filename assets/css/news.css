@@ -92,14 +92,14 @@ a, a:hover, a:visited, a:active, a:link
 }
 a:hover
 {
-	color: #20d34a !important;
+	color: #d9232d !important;
 }
 ::selection
 {
-	color: #20d34a;
-}
+	color: #d9232d;
+/* }
 p::selection
-{
+{ */
 	
 }
 h1{font-size: 48px;}
@@ -113,14 +113,14 @@ h1, h2, h3, h4, h5, h6
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
-}
+/* }
 h1::selection, 
 h2::selection, 
 h3::selection, 
 h4::selection, 
 h5::selection, 
 h6::selection
-{
+{ */
 	
 }
 .form-control
@@ -230,7 +230,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 3px;
-	background: #20d34a;
+	background: #d9232d;
 	content: '';
 	z-index: 0;
 	-webkit-transition: all 400ms cubic-bezier(.33,.68,.59,.99);
@@ -279,7 +279,7 @@ section
 	top: 0;
 	width: 54px;
 	height: 3px;
-	background: #20d34a;
+	background: #d9232d ;
 	content: '';
 }
 .section_title_light h2
@@ -445,7 +445,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: #d9232d ;
 }
 .logo
 {
@@ -453,7 +453,7 @@ section
 }
 .logo span
 {
-	color: #20d34a;
+	color: #d9232d ;
 }
 .logo_container a .logo:hover
 {
@@ -471,7 +471,7 @@ section
 	display: inline-block;
 	width: 23px;
 	height: 23px;
-	background: #20d34a;
+	background: #d9232d;
 	color: #FFFFFF;
 	font-size: 24px;
 	line-height: 23px;
@@ -620,7 +620,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #20d34a;
+	background: #d9232d ;
 }
 .menu_extra
 {
@@ -655,8 +655,8 @@ section
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 40px;
+	height: 40px;
 }
 .home_container
 {
@@ -673,7 +673,7 @@ section
 }
 .home_title span
 {
-	color: #20d34a;
+	color: #d9232d ;
 }
 .breadcrumbs
 {
@@ -735,7 +735,7 @@ section
 	top: 21px;
 	width: 69px;
 	height: 69px;
-	background: #20d34a;
+	background: #d9232d;
 }
 .news_day
 {
@@ -780,7 +780,7 @@ section
 	top: 0;
 	width: 54px;
 	height: 3px;
-	background: #20d34a;
+	background: #d9232d;
 	content: '';
 }
 .news_info
@@ -815,7 +815,7 @@ section
 .news_author a,
 .news_tags a
 {
-	color: #20d34a;
+	color: #d9232d;
 }
 .news_text
 {
@@ -831,7 +831,7 @@ section
 	position: relative;
 	font-size: 15px;
 	font-weight: 400;
-	color: #20d34a;
+	color: #d9232d ;
 	line-height: 0.75;
 }
 .news_link a::after
@@ -842,7 +842,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 1px;
-	background: #20d34a;
+	background: #d9232d ;
 	content: '';
 }
 .news_page_nav
@@ -866,7 +866,7 @@ section
 }
 .news_page_nav ul li.active a
 {
-	color: #20d34a;
+	color: #d9232d ;
 }
 
 /*********************************
@@ -929,7 +929,7 @@ section
 	right: 0;
 	width: 56px;
 	height: 56px;
-	background: #20d34a;
+	background: #d9232d;
 	text-align: center;
 	border: none;
 	outline: none;
@@ -956,7 +956,7 @@ section
 	right: 0;
 	width: calc(100% - 107px);
 	height: 2px;
-	background: #20d34a;
+	background: #d9232d ;
 	content: '';
 }
 .sidebar_title
@@ -1007,7 +1007,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: #d9232d;
 	content: '';
 }
 .box_title
@@ -1068,7 +1068,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: #d9232d;
 	content: '';
 }
 .ad_background
@@ -1099,7 +1099,7 @@ section
 }
 .ad_text span
 {
-	color: #20d34a;
+	color: #d9232d;
 }
 .ad_button
 {
@@ -1133,7 +1133,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: #d9232d;
 	content: '';
 }
 .footer_logo_container a
@@ -1174,7 +1174,7 @@ section
 	display: inline-block;
 	width: 31px;
 	height: 31px;
-	background: #20d34a;
+	background: #d9232d;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -1239,7 +1239,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #20d34a;
+	color: #d9232d;
 	margin-top: 7px;
 }
 .footer_news ul li:not(:last-child)
@@ -1249,7 +1249,7 @@ section
 .copyright
 {
 	width: 100%;
-	background: #020523;
+	/* background: #020523; */
 }
 .copyright_content
 {
@@ -1276,7 +1276,7 @@ section
 }
 .footer_social ul li a i
 {
-	color: #20d34a;
+	color: #d9232d ;
 	padding: 5px;
 	font-size: 14px;
 	-webkit-transition: all 200ms ease;

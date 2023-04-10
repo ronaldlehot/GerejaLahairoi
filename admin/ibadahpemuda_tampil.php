@@ -17,12 +17,9 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
-    background-color: #4CAF50;
+    background-color: #d9232d;
     color: white;
 }
-
-
-
 
 .pagination {
     display: inline-block;
@@ -51,20 +48,20 @@ pagination li.active {
 </head>
 
 	<div class="card-body">
-		<h3>DAFTAR Ibadah Pemuda</h3>
+		<h3>Daftar Ibadah Pemuda</h3>
                   <div class="table-responsive">
 
                     <table class="table">
 
 
 					<tr>
-						<th>NO</th>
+						<th>No</th>
 						<th>Lingkungan</th>
+						<th>Tanggal</th>
 						<th>Tempat</th>
 						<th>Pemimpin</th>
-						<th>Tanggal</th>
 						<th>Keterangan</th>
-						<th colspan="2">ACTION</th>
+						<th colspan="2">Aksi</th>
 					</tr>
 					<?php
 					// Include / load file koneksi.php
@@ -86,12 +83,12 @@ pagination li.active {
 						<tr>
 							<td> <?php echo $no; ?></td>
 							<td> <?php echo $data['lingkungan']; ?></td>
+							<td> <?php echo $data['tanggal']; ?></td>
 							<td> <?php echo $data['tempat']; ?></td>
 							<td> <?php echo $data['pemimpin']; ?></td>
-							<td> <?php echo $data['tanggal']; ?></td>
                             <td> <?php echo $data['keterangan']; ?></td>
-							<td> <a href="ibadahpemuda_edit.php?id=<?php echo base64_encode($data['kode']); ?>">EDIT</a></td>
-							<td> <a href="ibadahpemuda_hapus.php?id=<?php echo $data['kode']; ?> ">DELETE</a></td>
+							<td> <a href="ibadahpemuda_edit.php?id=<?php echo base64_encode($data['kode']); ?>">Ubah</a></td>
+							<td> <a href="ibadahpemuda_hapus.php?id=<?php echo $data['kode']; ?> ">Hapus</a></td>
 						</tr>
 					<?php
 						$no++; // Tambah 1 setiap kali looping
@@ -112,13 +109,13 @@ pagination li.active {
 				<?php
 				if($page == 1){ // Jika page adalah page ke 1, maka disable link PREV
 				?>
-					<li class="disabled"><a href="#">SESUDAH</a></li>
+					<li class="disabled"><a href="#">Halaman Pertama</a></li>
 					<li class="disabled"><a href="#">&laquo;</a></li>
 				<?php
 				}else{ // Jika page bukan page ke 1
 					$link_prev = ($page > 1)? $page - 1 : 1;
 				?>
-					<li><a href="ibadahpemuda_tampil.php?page=1">SESUDAH</a></li>
+					<li><a href="ibadahpemuda_tampil.php?page=1">Halaman Pertama</a></li>
 					<li><a href="ibadahpemuda_tampil.php?page=<?php echo $link_prev; ?>">&laquo;</a></li>
 				<?php
 				}
@@ -155,13 +152,13 @@ pagination li.active {
 				if($page == $jumlah_page){ // Jika page terakhir
 				?>
 					<li class="disabled"><a href="#">&raquo;</a></li>
-					<li class="disabled"><a href="#">SELANJUTNYA</a></li>
+					<li class="disabled"><a href="#">Halaman Terakhir</a></li>
 				<?php
 				}else{ // Jika Bukan page terakhir
 					$link_next = ($page < $jumlah_page)? $page + 1 : $jumlah_page;
 				?>
 					<li><a href="ibadahpemuda_tampil.php?page=<?php echo $link_next; ?>">&raquo;</a></li>
-					<li><a href="ibadahpemuda_tampil.php?page=<?php echo $jumlah_page; ?>">SELANJUTNYA</a></li>
+					<li><a href="ibadahpemuda_tampil.php?page=<?php echo $jumlah_page; ?>">Halaman Terakhir</a></li>
 				<?php
 				}
 				?>

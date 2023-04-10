@@ -7,6 +7,21 @@ $data  = mysqli_fetch_array($sqlku);
 
 ?>
 <head>
+	<!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Berita Terbaru</h2>
+          <ol>
+            <li><a href="index.php">Beranda</a></li>
+            <li>Berita Terbaru</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
 <title>Gereja Lahairoi Tuak Sabu  <?php echo $data['judul']; ?></title>
 <link href="assets/css/news.css" rel="stylesheet">
 <link href="assets/css/news_responsive.css" rel="stylesheet">
@@ -60,7 +75,7 @@ $data  = mysqli_fetch_array($sqlku);
 						<!-- Categories -->
 						<div class="sidebar_categories sidebar_section">
 							<div class="sidebar_section_title">
-								<div class="sidebar_title">KEGIATAN</div>
+								<div class="sidebar_title">Berita</div>
 							</div>
 							<ul>
 								<?php
@@ -68,7 +83,7 @@ $data  = mysqli_fetch_array($sqlku);
 						           while ($data=mysqli_fetch_assoc($qry)) {
 						          ?>
 
-								<li><a href="kegiatan_detail.php?id=<?php echo base64_encode($data['kategori']); ?>">#. <?php echo $data['kategori']; ?></a></li>
+								<li><a href="kegiatan_detail.php?id=<?php echo base64_encode($data['judul']); ?>">#. <?php echo $data['judul']; ?></a></li>
 								<?php } ?>
 							</ul>
 						</div>

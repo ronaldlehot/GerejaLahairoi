@@ -81,8 +81,8 @@
 </head>
 
 <body>
-
-   
+</br>
+</br>  
   <main id="main">
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -99,7 +99,7 @@
       </div>
     </section><!-- End Breadcrumbs -->
   <!-- ======= Ibadah Kebaktian Hari Minggu ======= -->
-  <table>
+  <!-- <table>
   <h3>Ibadah Kebaktian Hari Minggu</h3>
     <thead>
       <tr>
@@ -133,23 +133,27 @@
         <td>Yesaya 52:13-15, 53:1-12</td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
 
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  
   
 <!-- ======= Ibadah Pemuda ======= -->
 
-  <table>
-    
-  <?php
+<table>
+  <h3>Ibadah Pemuda</h3>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Lingkungan</th>
+        <th>Tanggal</th>
+        <th>Tempat</th>
+        <th>Pemimpin</th>
+        <th>Keterangan</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php
 					// Include / load file koneksi.php
 					
 					// Cek apakah terdapat data page pada URL
@@ -166,24 +170,12 @@
 					$no = $limit_start + 1; // Untuk penomoran tabel
 					while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
 					?>
-  <h3>Ibadah Pemuda</h3>
-    <thead>
-      <tr>
-        <th>No</th>
-        <th>Lingkungan</th>
-        <th>Tempat</th>
-        <th>Pemimpin</th>
-        <th>tanggal</th>
-        <th>Pembacaan Firman Tuhan</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><?php echo $no; ?></td>
         <td><?php echo $data['lingkungan']; ?></td>
+        <td><?php echo $data['tanggal']; ?></td>
         <td><?php echo $data['tempat']; ?></td>
         <td><?php echo $data['pemimpin']; ?></td>
-        <td><?php echo $data['tanggal']; ?></td>
         <td><?php echo $data['keterangan']; ?></td>
       </tr>
       <?php
@@ -196,14 +188,8 @@
   </table>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
-  <!-- ======= Ibadah Kaum Bapak ======= -->
+<!-- ======= Ibadah Kaum Bapak ======= -->
 
 <table>
 
@@ -214,8 +200,9 @@
         <th>Lingkungan</th>
         <th>Tanggal</th>
         <th>Tempat</th>
-        <th>Pemimpin</th>
         <th>Asal Lingkungan</th>
+        <th>Pemimpin</th>
+
        
       </tr>
     </thead>
@@ -242,10 +229,9 @@
         <td><?php echo $data['lingkungan']; ?></td>
         <td><?php echo $data['tanggal']; ?></td>
         <td><?php echo $data['tempat']; ?></td>
-        <td><?php echo $data['pemimpin']; ?></td>
         <td><?php echo $data['asal_lingkungan']; ?></td>
-
-       
+        <td><?php echo $data['pemimpin']; ?></td>
+      
       </tr>
       <?php
 						$no++; // Tambah 1 setiap kali looping
@@ -260,56 +246,112 @@
 
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
 <!-- ======= Ibadah Perempuan GMIT ======= -->
-  <table>
+
+<table>
   <h3>Ibadah Perempuan GMIT</h3>
     <thead>
       <tr>
         <th>No</th>
-        <th>Wilayah</th>
+        <th>Lingkungan</th>
+        <th>Tanggal</th>
         <th>Tempat</th>
         <th>Pemimpin</th>
-        <th>Pembacaan Firman Tuhan</th>
+
+       
       </tr>
     </thead>
     <tbody>
+    <?php
+					// Include / load file koneksi.php
+					
+					// Cek apakah terdapat data page pada URL
+					$page = (isset($_GET['page']))? $_GET['page'] : 1;
+					
+					$limit = 50; // Jumlah data per halamannya
+					
+					// Untuk menentukan dari data ke berapa yang akan ditampilkan pada tabel yang ada di database
+					$limit_start = ($page - 1) * $limit;
+					
+					// Buat query untuk menampilkan data siswa sesuai limit yang ditentukan
+					$sql = mysqli_query($konek, "SELECT * FROM tbl_ibadah_perempuan LIMIT ".$limit_start.",".$limit);
+					
+					$no = $limit_start + 1; // Untuk penomoran tabel
+					while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+					?>
       <tr>
-        <td>1</td>
-        <td>Kapernaum</td>
-        <td>Rumah Archangela Z. Hardin</td>
-        <td>Fadli Djati</td>
-        <td>Yesaya 52:13-15, 53:1-12</td>
+        <td><?php echo $no; ?></td>
+        <td><?php echo $data['lingkungan']; ?></td>
+        <td><?php echo $data['tanggal']; ?></td>
+        <td><?php echo $data['tempat']; ?></td>
+        <td><?php echo $data['pemimpin']; ?></td>
+      
       </tr>
-      <tr>
-        <td>2</td>
-        <td>Kapernaum</td>
-        <td>Rumah Archangela Z. Hardin</td>
-        <td>Fadli Djati</td>
-        <td>Yesaya 52:13-15, 53:1-12</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Kapernaum</td>
-        <td>Rumah Archangela Z. Hardin</td>
-        <td>Fadli Djati</td>
-        <td>Yesaya 52:13-15, 53:1-12</td>
-      </tr>
-        <td>4</td>
-        <td>Kapernaum</td>
-        <td>Rumah Archangela Z. Hardin</td>
-        <td>Fadli Djati</td>
-        <td>Yesaya 52:13-15, 53:1-12</td>
+      <?php
+						$no++; // Tambah 1 setiap kali looping
+					}
+					?>
+				
+	
+
     </tbody>
+   
   </table>
 
+  </br>
+  </br>
+<!-- ======= Ibadah Rumah Tangga ======= -->
 
+<table>
+  <h3>Ibadah Rumah Tangga</h3>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Lingkungan</th>
+        <th>Wilayah</th>
+        <th>Rumah Keluarga</th>
+        <th>Pemimpin</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php
+					// Include / load file koneksi.php
+					
+					// Cek apakah terdapat data page pada URL
+					$page = (isset($_GET['page']))? $_GET['page'] : 1;
+					
+					$limit = 50; // Jumlah data per halamannya
+					
+					// Untuk menentukan dari data ke berapa yang akan ditampilkan pada tabel yang ada di database
+					$limit_start = ($page - 1) * $limit;
+					
+					// Buat query untuk menampilkan data siswa sesuai limit yang ditentukan
+					$sql = mysqli_query($konek, "SELECT * FROM tbl_ibadah_rt LIMIT ".$limit_start.",".$limit);
+					
+					$no = $limit_start + 1; // Untuk penomoran tabel
+					while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+					?>
+      <tr>
+        <td><?php echo $no; ?></td>
+        <td><?php echo $data['lingkungan']; ?></td>
+        <td><?php echo $data['wilayah']; ?></td>
+        <td><?php echo $data['rumah_keluarga']; ?></td>
+        <td><?php echo $data['pemimpin']; ?></td>
+      
+      </tr>
+      <?php
+						$no++; // Tambah 1 setiap kali looping
+					}
+					?>
+
+    </tbody>
+  </table>
 </main><!-- End #main -->
+
+</br>
+</br>
+
 
 <!-- ======= Footer ======= -->
 <?php include 'footer.php'; ?>

@@ -31,12 +31,12 @@
   <link rel="stylesheet" href="https://kit.fontawesome.com/37093c578d.css" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+  <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+  <!-- <link rel="stylesheet" type="text/css" href="styles/main_styles.css"> -->
+  <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
 
   
@@ -63,14 +63,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.php" class="active">Beranda</a></li>
+          <li><a href="index.php">Beranda</a></li>
 
           <li class="dropdown"><a href="#"><span>Tentang</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="tentang.php">Profil Gereja</a></li>
               <li><a href="profil-pendeta.php">Profil Pendeta</a></li>
               <li><a href="profil-pegawai.php">Profil Pegawai</a></li>
-              <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+  
 
               <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -93,7 +93,6 @@
           </ul>
         </li>
           <li><a href="galeri.php">Galeri</a></li>
-          <!-- <li><a href="pricing.html">Pricing</a></li> -->
           <li><a href="renungan.php">Renungan</a></li>
 
           <li><a href="kontak.php">Kontak</a></li>

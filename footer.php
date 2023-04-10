@@ -73,7 +73,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="index.php">Beranda</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="tentang.php">Sejarah Gereja</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="tentang.php">Visi & Misi Gereja</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="tentang.php">Profil Gereja </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="profil-pendeta.php">Profil Pendeta</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="profil-pegawai.php">Profil Pegawai</a></li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Informasi Terbaru</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Warta Jemaat</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="warta-jemaat.php">Warta Jemaat</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="galeri.php">Galeri</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="renungan.php">Renungan</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="jadwal-pelayanan.php">Jadwal Pelayanan</a></li>

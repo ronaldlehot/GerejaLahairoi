@@ -5,9 +5,9 @@ $visi_misi = mysqli_real_escape_string($konek, isset($_POST['isi_warta']) ? $_PO
 $query = mysqli_query($konek, "UPDATE tbl_warta_jemaat SET isi_warta = '$visi_misi' WHERE id = 2");
 
 if($query){
-	$_SESSION['sukses'] = 'Visi Misi Berhasil Diubah!';
+	$_SESSION['sukses'] = 'Warta Jemaat Berhasil Diubah!';
 	header('Location: isi_warta.php');
 } else {
-	$_SESSION['gagal'] = 'Visi Misi Gagal Diubah!';
+	$_SESSION['gagal'] = 'Warta Jemaat Gagal Diubah!';
 	header('Location: isi_warta.php');
 }

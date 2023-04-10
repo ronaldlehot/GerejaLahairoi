@@ -22,8 +22,8 @@ $visi_misi = mysqli_fetch_assoc($query);
 
 <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="master.php">Home</a></li>
-            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active">Edit  News</li> </li>
-          </ul>
+            <li class="breadcrumb-item active">Master <li class="breadcrumb-item active">Ubah Warta Jemaat</li> </li>
+</ul>
 
 	<div class="container mt-3">
 		<div class="row">
@@ -32,7 +32,7 @@ $visi_misi = mysqli_fetch_assoc($query);
 					<div class="card-header">
 						<div class="clearfix">
 							<div class="float-left">
-								Visi Misi
+								Warta Jemaat
 							</div>
 							
 						</div>
@@ -56,12 +56,12 @@ $visi_misi = mysqli_fetch_assoc($query);
 						<?php unset($_SESSION['gagal']) ?>
 						<?php endif; ?>
 						<form method="POST" action="proses_visi_misi.php">
-							<div class="form-group" ">
+							<div class="form-group">
 								<textarea name="isi_warta" id="ckeditor" class="ckeditor form-control" style="height: 300px;"><?= $visi_misi['isi_warta'] ?></textarea>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-sm btn-primary" onclick="return confirm('apakah anda yakin?')" name="ubah">Ubah</button>
-								<button type="reset" class="btn btn-sm btn-danger" onclick="return confirm('apakah anda yakin?')">Batal</button>
+								<button type="submit" class="btn btn-sm btn-primary" onclick="return confirm('Apakah anda yakin ?')" name="ubah">Ubah</button>
+								<button type="reset" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin ?')">Batal</button>
 							</div>
 						</form>
 					</div>
@@ -72,6 +72,6 @@ $visi_misi = mysqli_fetch_assoc($query);
     <script src="../resources/js/jquery.js"></script>
 	<script src="../resources/js/bootstrap.min.js"></script>
 	<script src="../resources/ckeditor/ckeditor.js"></script>
-	
+	<?php include'footer.php'; ?>
 </body>
 </html>
